@@ -1,2 +1,5 @@
 # wireproxy-info
-Configuration templates for wireproxy
+
+[Wireproxy official repository](https://github.com/whyvl/wireproxy)
+
+Use configuration templates for OS you are running wireproxy on.
