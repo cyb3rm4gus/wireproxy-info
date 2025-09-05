@@ -1,0 +1,15 @@
+[Unit]
+Description=WireProxy (WireGuard userspace proxy)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/wireproxy -c /etc/wireproxy/wireproxy.conf
+Restart=on-failure
+RestartSec=3
+
+User=wireproxy
+Group=wireproxy
+
+[Install]
+WantedBy=multi-user.target
